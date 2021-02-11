@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0C193A;">
+	<a class="navbar-brand" href="/debut"><img src="/logo/ManoMano.svg" style="width: 90px"></a>
+	<button class="navbar-toggler" style="background-color: white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Produits
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<p>
+						<b>
+							<u>
+								Voir par produit</u>
+						</b>
+					</p>
+					<a class="dropdown-item" href="/categories/jardin">jardin</a>
+					<a class="dropdown-item" href="/categories/matériaux">matériaux</a>
+					<a class="dropdown-item" href="/categories/quinquailleries">quinquailleries</a>
+					<a class="dropdown-item" href="/categories/cusine">cuisine</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/register">Inscription</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/login">Connexion</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ path('cart') }}">Votre panier</a>
+			</li>
+
+		</ul>
+		<form action="/search/resultat" class="form-inline my-2 my-lg-0" method="post">
+
+			<input name="recherche" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-warning" type="submit">Search</button>
+
+		</form>
+	</div>
+</nav>
